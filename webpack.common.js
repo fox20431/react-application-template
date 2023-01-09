@@ -1,7 +1,4 @@
 const path = require('path');
-// The plugin will generate an HTML5 file
-// that includes all your webpack bundles in the head using script tags.
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	resolve: {
@@ -12,9 +9,9 @@ module.exports = {
 		// Webpack hints message when the generated JavaScript File is larger than preset.
 		hints: false,
 	},
-	entry: path.resolve(__dirname, 'src/index.tsx'),
+	entry: path.resolve(__dirname, 'src/main.tsx'),
 	output: {
-		filename: 'bundle.js',
+		filename: 'main.js',
 		// set public path
 		// browser router base on this path to get resource,
 		// if you don't set it, multi-level will not find the specified resource.
@@ -57,11 +54,5 @@ module.exports = {
 		],
 	},
 	plugins: [
-		new HtmlWebpackPlugin({
-			// select html file that react dom will mount.
-			template: path.resolve(__dirname, 'src/index.html'),
-			filename: 'index.html',
-			favicon: path.resolve(__dirname, 'src/favicon.ico')
-		}),
 	],
 };

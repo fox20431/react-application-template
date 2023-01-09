@@ -1,4 +1,6 @@
-dist
+dist/**
+!dist/index.html
+!dist/favicon.ico
 build
 
 node_modules

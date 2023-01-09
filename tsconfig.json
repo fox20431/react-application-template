@@ -1,6 +1,6 @@
 {
     "files": [
-        "src/index.tsx"
+        "src/main.tsx"
     ],
     "compilerOptions": {
         "outDir": "./dist/",
