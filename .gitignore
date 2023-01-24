@@ -1,5 +1,6 @@
 dist/**
 !dist/index.html
+!dist/index.css
 !dist/favicon.ico
 build
 

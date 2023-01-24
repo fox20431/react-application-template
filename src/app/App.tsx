@@ -1,9 +1,8 @@
 import * as React from "react"
+import './App.scss'
 
-function App() {
+export default function App() {
 	return (
-        <div>it works!</div>
+        <div className="app">it works!</div>
 	)
 }
-
-export default App
