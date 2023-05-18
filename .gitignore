@@ -1,0 +1,12 @@
+dist/**
+!dist/index.html
+!dist/index.css
+!dist/favicon.ico
+build
+
+node_modules
+
+.DS_Store
+
+# Visual Studio Code
+.vscode
